@@ -1,0 +1,60 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+#include<ctype.h>
+
+int main ()
+{
+int s1,s2,s3,s4,s5;
+int persent;
+
+printf("please enter the marks of physics , chemistry ,mathematics,hindi , english :\n");
+scanf("%d %d %d %d %d",&s1, &s2 ,&s3 ,&s4, &s5);
+
+persent=(s1+s2+s3+s4+s5)*100/500;
+
+printf("present is %d\n",persent);
+
+if((persent>90)&&(persent<=100))
+{
+	printf("you have got A+ grade with marks %d",persent);
+	
+}
+else if((persent>80)&&(persent<=90))
+{
+	printf("you have got A grade with marks %d",persent);
+	
+}
+else if((persent>70)&&(persent<=80))
+{
+	printf("you have got B grade with marks %d",persent);
+	
+}
+else if((persent>60)&&(persent<=70))
+{
+	printf("you have got C grade with marks %d",persent);
+	
+}
+else if((persent>50)&&(persent<=60))
+{
+	printf("you have got D grade with marks %d",persent);
+	
+}
+else if((persent>40)&&(persent<=50))
+{
+	printf("you have got E grade with marks %d",persent);
+	
+}
+else if((persent>30)&&(persent<=0))
+{
+	printf("you have got F grade with marks %d",persent);
+	
+}
+else 
+{
+	printf("you have enter worng num ");
+}
+	return 0;
+	
+}
